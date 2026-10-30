@@ -1,0 +1,220 @@
+/* Universal styles */
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* layout container for header, main, and sticky footer */
+}
+
+.main-content {
+    position: relative;
+    top: 5.5rem;
+    /* To offset for fixed header. */
+}
+
+button {
+    border-radius: 8px;
+    padding: .1875rem .5rem;
+    color: white;
+    border: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+/* Header section */
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 1px #dbdbdb;
+    background-color: white;
+}
+
+header .content {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #860ff3, #f502bb, #f5bd00, #f60a5d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav li {
+    list-style: none;
+    margin-left: 3.5rem;
+}
+
+nav li a {
+    color: #f502bb;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: #860ff3;
+    text-decoration: underline;
+}
+
+nav li a:active {
+    color: #f60a5d;
+    text-decoration: none;
+}
+
+nav button {
+    font-weight: bold;
+    background-color: #4cb5f9;
+    padding: .5rem 1.25rem;
+}
+
+/* Banner section */
+#banner-section {
+    background-image: url("../images/banner-steve-gale.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 800px) {
+    #banner-section {
+        flex-flow: row;
+    }
+}
+
+#banner-section h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: right;
+    font-style: italic;
+    line-height: 1.6;
+    width: 30%;
+}
+
+#banner-section input {
+    display: block;
+    width: 100%;
+}
+
+#sign-up {
+    border-radius: 4px;
+    padding: 1.875rem;
+    line-height: 1.6;
+    background-color: #f502bcd5;
+    color: white;
+    box-shadow: 5px 5px 5px #4a4a4a;
+}
+
+#sign-up button {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    background-color: #4cb5f9;
+    padding: 1rem;
+    margin-top: 1.875rem;
+    width: 100%;
+}
+
+#sign-up h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#sign-up p {
+    font-size: .75rem;
+    font-style: italic;
+    margin-top: .75rem;
+}
+
+#sign-up a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#sign-up a:hover {
+    text-decoration: none;
+}
+
+#sign-up a:active {
+    color: white;
+}
+
+.user-inputs {
+    text-align: left;
+}
+
+/* Features section */
+#features-section {
+    background-color: #860ff3;
+    color: white;
+    padding: 6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.feature {
+    height: 300px;
+    width: 230px;
+    background-color: #f5bd00;
+}
+
+/* About section */
+
+/* Contact section */
+
+/* Footer */
+footer {
+    background-color: #4cb5f9;
+    position: relative;
+    top: 5.5rem;
+    /* To offset for fixed header. */
+}
+
+footer span {
+    display: block;
+}
+
+footer .content {
+    color: white;
+    padding: 1.5rem 1.875rem;
+    font-size: .75rem;
+    line-height: 1.6;
+    letter-spacing: .375rem;
+}
+
+footer .copyright {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: .18rem;
+    flex-grow: 1;
+}
