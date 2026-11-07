@@ -2,11 +2,13 @@
 
 # dependencies
 /node_modules
+.module-cache
 /.pnp
 .pnp.js
 
 # testing
 /coverage
+test/the-files-to-test.generated.js
 
 # next.js
 /.next/
@@ -14,10 +16,33 @@
 
 # production
 /build
+base-build/
 
 # misc
 .DS_Store
 *.pem
+scripts/flow/*/.flowconfig
+.flowconfig
+*~
+*.pyc
+.grunt
+_SpecRunner.html
+__benchmarks__
+sizebot-comment.md
+sizebot-context.json
+sizebot-message.md
+sizebot-problem.txt
+sizebot-results.json
+remote-repo/
+*.log*
+chrome-user-data
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.zed
+*.swp
+*.swo
 
 # debug
 npm-debug.log*
@@ -28,14 +53,42 @@ yarn-error.log*
 .env*.local
 .env
 
+# temporary files
+/tmp
+
 # vercel
 .vercel
 
-# visual studio code
-.vscode
 # Visual Studio
 .vs
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vite build output
+/dist
+
+# react-devtools build output
+packages/react-devtools-core/dist
+packages/react-devtools-extensions/chrome/build
+packages/react-devtools-extensions/chrome/*.crx
+packages/react-devtools-extensions/chrome/*.pem
+packages/react-devtools-extensions/firefox/build
+packages/react-devtools-extensions/firefox/*.xpi
+packages/react-devtools-extensions/firefox/*.pem
+packages/react-devtools-extensions/shared/build
+packages/react-devtools-extensions/.tempUserDataDir
+packages/react-devtools-fusebox/dist
+packages/react-devtools-inline/dist
+packages/react-devtools-shell/dist
+packages/react-devtools-cdt-mcp/dist
+
+# fixtures
+fixtures/dom/public/react-dom.js
+fixtures/dom/public/react.js
+
+# claude local files and worktrees
+/.worktrees
+.claude/*.local.*
+.claude/worktrees
